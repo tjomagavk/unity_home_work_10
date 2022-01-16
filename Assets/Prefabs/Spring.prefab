@@ -12,7 +12,6 @@ GameObject:
   - component: {fileID: 1715563080556669980}
   - component: {fileID: 7787833423162805342}
   - component: {fileID: 4867796346023249971}
-  - component: {fileID: 2076909416810514063}
   m_Layer: 8
   m_Name: Spring
   m_TagString: Untagged
@@ -88,21 +87,9 @@ BoxCollider:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7238874522558944893}
-  m_Material: {fileID: 13400000, guid: 84ec449e93329d54aa95fb89561c548a, type: 2}
+  m_Material: {fileID: 13400000, guid: 2f400175536a43f42a1e773639115ecb, type: 2}
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 1.0000005, y: 1, z: 1.0000005}
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &2076909416810514063
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7238874522558944893}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a805ab8f42f37e44c88fba14bba49546, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 

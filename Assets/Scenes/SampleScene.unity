@@ -363,5 +363,30 @@ PrefabInstance:
       propertyPath: m_Name
       value: Table
       objectReference: {fileID: 0}
+    - target: {fileID: 4099465993419304838, guid: 88b248ab83865ad438ddfe372fc404e1,
+        type: 3}
+      propertyPath: m_ConnectedAnchor.x
+      value: -0.000003799796
+      objectReference: {fileID: 0}
+    - target: {fileID: 4099465993419304838, guid: 88b248ab83865ad438ddfe372fc404e1,
+        type: 3}
+      propertyPath: m_ConnectedAnchor.y
+      value: 0.030003186
+      objectReference: {fileID: 0}
+    - target: {fileID: 4099465993419304838, guid: 88b248ab83865ad438ddfe372fc404e1,
+        type: 3}
+      propertyPath: m_ConnectedAnchor.z
+      value: 0.00000014901161
+      objectReference: {fileID: 0}
+    - target: {fileID: 9108834884538821696, guid: 88b248ab83865ad438ddfe372fc404e1,
+        type: 3}
+      propertyPath: m_ConnectedAnchor.y
+      value: 0.030002393
+      objectReference: {fileID: 0}
+    - target: {fileID: 9108834884538821696, guid: 88b248ab83865ad438ddfe372fc404e1,
+        type: 3}
+      propertyPath: m_ConnectedAnchor.z
+      value: 0.00000014901161
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 88b248ab83865ad438ddfe372fc404e1, type: 3}

@@ -11,7 +11,6 @@ GameObject:
   - component: {fileID: 1201306387094392968}
   - component: {fileID: 8887160978674275332}
   - component: {fileID: 8532796499597337336}
-  - component: {fileID: 3335268882466443713}
   m_Layer: 0
   m_Name: Cylinder (1)
   m_TagString: Untagged
@@ -80,20 +79,6 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
---- !u!136 &3335268882466443713
-CapsuleCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4766992347329788952}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  m_Radius: 0.50000036
-  m_Height: 2
-  m_Direction: 1
-  m_Center: {x: 0.00000005960467, y: 0, z: -0.00000008940701}
 --- !u!1 &5475629516294541660
 GameObject:
   m_ObjectHideFlags: 0
@@ -105,7 +90,6 @@ GameObject:
   - component: {fileID: 3404663941002401883}
   - component: {fileID: 7934116224303817605}
   - component: {fileID: 430871769667884595}
-  - component: {fileID: 5026468796845789003}
   m_Layer: 0
   m_Name: Cylinder (2)
   m_TagString: Untagged
@@ -174,20 +158,6 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
---- !u!136 &5026468796845789003
-CapsuleCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5475629516294541660}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  m_Radius: 0.50000036
-  m_Height: 2
-  m_Direction: 1
-  m_Center: {x: 0.00000005960467, y: 0, z: -0.00000008940701}
 --- !u!1 &6697339715086901311
 GameObject:
   m_ObjectHideFlags: 0
@@ -199,8 +169,6 @@ GameObject:
   - component: {fileID: 4869430533681900917}
   - component: {fileID: 7047282085156693041}
   - component: {fileID: 7587963319682033134}
-  - component: {fileID: 7703221240807259582}
-  - component: {fileID: 7755522888785300006}
   m_Layer: 8
   m_Name: Cylinder
   m_TagString: Untagged
@@ -269,32 +237,6 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
---- !u!136 &7703221240807259582
-CapsuleCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6697339715086901311}
-  m_Material: {fileID: 13400000, guid: 84ec449e93329d54aa95fb89561c548a, type: 2}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  m_Radius: 0.50000036
-  m_Height: 2
-  m_Direction: 1
-  m_Center: {x: 0.00000005960467, y: 0, z: -0.00000008940701}
---- !u!114 &7755522888785300006
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6697339715086901311}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a805ab8f42f37e44c88fba14bba49546, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &7711539779785358332
 GameObject:
   m_ObjectHideFlags: 0
@@ -396,6 +338,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4560955199564974936}
+  - component: {fileID: 924752459971040404}
+  - component: {fileID: 4955525430398601086}
   m_Layer: 0
   m_Name: Barrel
   m_TagString: Untagged
@@ -421,3 +365,29 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &924752459971040404
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7795981411425218870}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a805ab8f42f37e44c88fba14bba49546, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _pointLight: {fileID: 7210449457260234609}
+--- !u!135 &4955525430398601086
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7795981411425218870}
+  m_Material: {fileID: 13400000, guid: 2f400175536a43f42a1e773639115ecb, type: 2}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.5
+  m_Center: {x: 0, y: 0, z: 0}
