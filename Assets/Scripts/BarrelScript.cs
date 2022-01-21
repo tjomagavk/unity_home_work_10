@@ -2,20 +2,28 @@
 
 public class BarrelScript : MonoBehaviour
 {
-    public Light _pointLight;
+    public Light pointLight;
 
-    private void Start()
+    void Start()
     {
-        if (_pointLight == null)
+        if (pointLight == null)
         {
-            _pointLight = GetComponentInChildren<Light>();
+            pointLight = GetComponentInChildren<Light>();
         }
 
-        _pointLight.enabled = false;
+        pointLight.enabled = false;
+        BarrelsManager.Instance.RegisterBarrel(this);
+    }
+
+    public void LightOff()
+    {
+        pointLight.enabled = false;
     }
 
     private void OnCollisionEnter(Collision other)
     {
-        _pointLight.enabled = !_pointLight.enabled;
+        pointLight.enabled = !pointLight.enabled;
+        BarrelsManager.Instance.BarrelActive(pointLight.isActiveAndEnabled);
+        ScoreManager.Instance.AddScore(100);
     }
 }

@@ -377,7 +377,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a805ab8f42f37e44c88fba14bba49546, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _pointLight: {fileID: 7210449457260234609}
+  pointLight: {fileID: 7210449457260234609}
+  barrelsScript: {fileID: 0}
 --- !u!135 &4955525430398601086
 SphereCollider:
   m_ObjectHideFlags: 0
