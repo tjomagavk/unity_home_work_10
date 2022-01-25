@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 4867796346023249971}
   - component: {fileID: 1879080414231448100}
   m_Layer: 8
-  m_Name: Spring
+  m_Name: Rubber
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
