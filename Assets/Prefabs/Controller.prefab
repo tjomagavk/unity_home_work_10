@@ -46,8 +46,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   keyCodes: 61000000
-  _joint: {fileID: 2546128835171420614}
-  _motorEnable: 0
+  joint: {fileID: 2546128835171420614}
 --- !u!1 &4729667751663440879
 GameObject:
   m_ObjectHideFlags: 0

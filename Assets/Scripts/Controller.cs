@@ -6,26 +6,49 @@ using UnityEngine;
 public class Controller : MonoBehaviour
 {
     public List<KeyCode> keyCodes;
-    public HingeJoint _joint;
-    public bool _motorEnable;
+    public HingeJoint joint;
 
     void Update()
+    {
+        if (GetKeyDown())
+        {
+            EnableMotor(true);
+        }
+
+        if (GetKeyUp())
+        {
+            EnableMotor(false);
+        }
+    }
+
+    private bool GetKeyDown()
     {
         foreach (var keyCode in keyCodes)
         {
             if (Input.GetKeyDown(keyCode))
             {
-                EnableMotor(true);
-            }
-            else if (Input.GetKeyUp(keyCode))
-            {
-                EnableMotor(false);
+                return true;
             }
         }
+
+        return false;
+    }
+
+    private bool GetKeyUp()
+    {
+        foreach (var keyCode in keyCodes)
+        {
+            if (Input.GetKeyUp(keyCode))
+            {
+                return true;
+            }
+        }
+
+        return false;
     }
 
     private void EnableMotor(bool enable)
     {
-        _joint.useMotor = enable;
+        joint.useMotor = enable;
     }
 }
